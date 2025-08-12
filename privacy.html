@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TapVoice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #e5e5e7;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        h1 {
+            color: #007AFF;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            color: #a1a1a6;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        
+        .last-updated {
+            color: #86868b;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #1d1d1f;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        
+        h2 {
+            color: #007AFF;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007AFF;
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            color: #34C759;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            padding: 12px 0 12px 50px;
+            background: #1d1d1f;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            position: relative;
+            font-size: 1rem;
+        }
+        
+        li::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background: #007AFF;
+            border-radius: 50%;
+        }
+        
+        ol {
+            margin: 20px 0;
+            padding-left: 0;
+            counter-reset: step-counter;
+        }
+        
+        ol li {
+            counter-increment: step-counter;
+            padding-left: 60px;
+        }
+        
+        ol li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background: #007AFF;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #007AFF;
+        }
+        
+        .privacy-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .badge {
+            background: #1d1d1f;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        
+        .badge.good::before {
+            content: '✓';
+            display: block;
+            font-size: 1.5rem;
+            color: #34C759;
+            margin-bottom: 10px;
+        }
+        
+        .badge.bad::before {
+            content: '✗';
+            display: block;
+            font-size: 1.5rem;
+            color: #FF3B30;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 8px 32px rgba(0, 122, 255, 0.3);
+        }
+        
+        .contact h2 {
+            color: white;
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+        
+        .contact p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: #1d1d1f;
+            border-radius: 12px;
+            color: #86868b;
+            font-style: italic;
+            border: 1px solid #333;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .privacy-badges {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">TapVoice - Privacy-First AI for Apple Watch</div>
+            <div class="last-updated">Last updated: August 12, 2025</div>
+        </div>
+
+        <h2>Welcome to TapVoice</h2>
+        <p>TapVoice is a privacy-first Apple Watch app that lets you ask questions and get instant voice responses. We believe your privacy is fundamental, and we've built TapVoice with this principle at its core.</p>
+
+    <h2>What Information We Collect</h2>
+    <p><strong>Good news: We collect minimal information, and none of it is personally identifiable.</strong></p>
+
+    <div class="privacy-badges">
+        <div class="badge bad">
+            <strong>No voice recordings</strong><br>
+            Your speech is processed locally and never stored
+        </div>
+        <div class="badge bad">
+            <strong>No personal data</strong><br>
+            We don't know who you are
+        </div>
+        <div class="badge bad">
+            <strong>No usage analytics</strong><br>
+            We don't track how you use the app
+        </div>
+        <div class="badge bad">
+            <strong>No cookies or tracking</strong><br>
+            We don't use any tracking technologies
+        </div>
+        <div class="badge bad">
+            <strong>No account creation</strong><br>
+            No login required
+        </div>
+    </div>
+
+    <h3>Information We Do Collect</h3>
+    <div class="privacy-badges">
+        <div class="badge good">
+            <strong>App usage data</strong><br>
+            Basic statistics like how many questions you ask (stored locally on your device)
+        </div>
+        <div class="badge good">
+            <strong>Language preference</strong><br>
+            Your chosen language for speech recognition (stored locally)
+        </div>
+        <div class="badge good">
+            <strong>Subscription status</strong><br>
+            Your current plan level (managed by Apple)
+        </div>
+    </div>
+
+    <h2>How Your Data is Protected</h2>
+
+    <h3>Local Storage Only</h3>
+    <p>All your data stays on your Apple Watch and iPhone. We use:</p>
+    <ul>
+        <li><strong>Core Data</strong> for question history (stored locally)</li>
+        <li><strong>UserDefaults</strong> for app settings (stored locally)</li>
+        <li><strong>No cloud storage</strong> - Nothing goes to our servers</li>
+    </ul>
+
+    <h3>Voice Processing</h3>
+    <p>When you speak to TapVoice:</p>
+    <ol>
+        <li>Your voice is processed locally on your Apple Watch</li>
+        <li>Text is sent to OpenAI's API for response generation</li>
+        <li><strong>Your voice is never recorded or stored</strong></li>
+        <li><strong>Your questions are not saved to any cloud service</strong></li>
+    </ol>
+
+    <h2>Third-Party Services</h2>
+
+    <h3>OpenAI API & Web Search</h3>
+    <ul>
+        <li>We use OpenAI's GPT models with web search capabilities</li>
+        <li>Your question text may trigger real-time web searches</li>
+        <li>Search results are processed to provide current information</li>
+        <li>No search history is stored on our servers</li>
+        <li>Only your question text (not voice) is sent to OpenAI</li>
+        <li>OpenAI's privacy policy applies to this data</li>
+        <li>We don't store your questions on our servers</li>
+    </ul>
+
+    <h3>Apple Services</h3>
+    <ul>
+        <li><strong>App Store</strong> - Handles subscription payments</li>
+        <li><strong>WatchConnectivity</strong> - Syncs data between your iPhone and Apple Watch</li>
+        <li>Apple's privacy policies apply to these services</li>
+    </ul>
+
+    <h2>Subscription and Payments</h2>
+
+    <h3>Payment Processing</h3>
+    <ul>
+        <li>All payments are processed by <strong>Apple App Store</strong></li>
+        <li>We never see your payment information</li>
+        <li>Apple handles all billing and subscription management</li>
+        <li>Subscription data is managed by Apple's systems</li>
+    </ul>
+
+    <h3>Available Plans</h3>
+    <ul>
+        <li><strong>Free Trial</strong> - 5 questions for new users</li>
+        <li><strong>Starter</strong> - 20 questions/day (€2.99/month)</li>
+        <li><strong>Pro</strong> - 100 questions/day (€6.99/month)</li>
+        <li><strong>Max</strong> - Unlimited questions (€12.99/month)</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+
+    <h3>Access and Control</h3>
+    <ul>
+        <li><strong>Delete your data</strong> - Clear app data in iOS Settings</li>
+        <li><strong>Export your data</strong> - Contact us for a copy of your local data</li>
+        <li><strong>Opt out</strong> - Stop using the app anytime</li>
+    </ul>
+
+    <h3>Data Retention</h3>
+    <ul>
+        <li><strong>Local data</strong> - Stored until you delete the app</li>
+        <li><strong>No server data</strong> - We don't store anything on our servers</li>
+        <li><strong>Apple data</strong> - Subject to Apple's retention policies</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>TapVoice is not intended for children under 13. We don't knowingly collect information from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy occasionally. We'll notify you of any changes by:</p>
+    <ul>
+        <li>Posting the new policy in the App Store</li>
+        <li>Updating the "Last updated" date above</li>
+    </ul>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or your privacy:</p>
+        <p><strong>Email:</strong> tapvoiceai@gmail.com</p>
+        <p><strong>Developer:</strong> Miika Kettunen</p>
+        <p><strong>Location:</strong> Finland</p>
+    </div>
+
+        <div class="footer-note">
+            <em>TapVoice is built with privacy and simplicity in mind. We believe technology should serve you, not track you.</em>
+        </div>
+    </div>
+</body>
+</html> 
