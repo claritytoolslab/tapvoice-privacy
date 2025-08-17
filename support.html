@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapVoice Support - AI Voice Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemUI, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #e5e5e7;
+            background: linear-gradient(135deg, #1a1a2e 0%, #000000 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #007aff;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #34c759;
+            margin: 30px 0 15px 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-bottom: 2px solid #34c759;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ff9500;
+            margin: 20px 0 10px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background: rgba(0, 122, 255, 0.1);
+            border: 1px solid #007aff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            background: rgba(52, 199, 89, 0.08);
+            border-left: 4px solid #34c759;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #34c759;
+            margin-bottom: 8px;
+        }
+
+        .troubleshoot-item {
+            background: rgba(255, 149, 0, 0.08);
+            border-left: 4px solid #ff9500;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .app-info {
+            background: rgba(142, 142, 147, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TapVoice Support</h1>
+        
+        <div class="contact-info">
+            <h2>Contact Support</h2>
+            <p>For technical support, billing questions, or feature requests:</p>
+            <p><strong>Email:</strong> <a href="mailto:tapvoiceai@gmail.com">tapvoiceai@gmail.com</a></p>
+            <p>We typically respond within 24-48 hours</p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I use TapVoice on my Apple Watch?</div>
+            <p>Simply open TapVoice on your Apple Watch, tap the microphone button, speak your question, and wait for the AI response. The answer will be displayed on screen and spoken aloud.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What subscription plans are available?</div>
+            <p>
+                • <strong>Free:</strong> 3 questions total (lifetime)<br>
+                • <strong>Starter:</strong> 240 questions/month + 60 web searches (€2.99/month)<br>
+                • <strong>Pro:</strong> 750 questions/month + 150 web searches (€6.99/month)<br>
+                • <strong>Max:</strong> 1,800 questions/month + 300 web searches (€12.99/month)
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I enhance voice quality?</div>
+            <p>Go to Settings on your Apple Watch app, then General → Accessibility → VoiceOver → Speech → Voices. Download Enhanced quality voices for your preferred language for better audio experience.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is my data private and secure?</div>
+            <p>Yes! TapVoice stores all data locally on your devices. We don't collect personal information, track usage, or store your voice recordings. Questions are processed securely via OpenAI's API.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I use TapVoice without my iPhone?</div>
+            <p>Yes, TapVoice works independently on your Apple Watch when connected to Wi-Fi or cellular. Your iPhone doesn't need to be nearby for basic functionality.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <p>Open Settings on your iPhone → [Your Name] → Subscriptions → TapVoice → Cancel Subscription. You can also manage subscriptions through the App Store app.</p>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="troubleshoot-item">
+            <h3>Audio not working</h3>
+            <ul>
+                <li>Check that your Apple Watch volume is turned up</li>
+                <li>Ensure TapVoice has microphone permissions</li>
+                <li>Try restarting the TapVoice app</li>
+                <li>Verify your Apple Watch is connected to internet</li>
+            </ul>
+        </div>
+
+        <div class="troubleshoot-item">
+            <h3>Questions not processing</h3>
+            <ul>
+                <li>Check your internet connection (Wi-Fi or cellular)</li>
+                <li>Verify you haven't exceeded your monthly question limit</li>
+                <li>Speak clearly and avoid background noise</li>
+                <li>Try asking shorter, more direct questions</li>
+            </ul>
+        </div>
+
+        <div class="troubleshoot-item">
+            <h3>Subscription issues</h3>
+            <ul>
+                <li>Verify your subscription is active in iPhone Settings → Subscriptions</li>
+                <li>Try logging out and back into your Apple ID</li>
+                <li>Restart both your iPhone and Apple Watch</li>
+                <li>Contact Apple Support for billing-related issues</li>
+            </ul>
+        </div>
+
+        <div class="troubleshoot-item">
+            <h3>App crashes or freezes</h3>
+            <ul>
+                <li>Force close TapVoice and reopen it</li>
+                <li>Restart your Apple Watch by holding the side button</li>
+                <li>Update to the latest TapVoice version from the App Store</li>
+                <li>Ensure your Apple Watch has sufficient storage space</li>
+            </ul>
+        </div>
+
+        <h2>System Requirements</h2>
+        <div class="app-info">
+            <p><strong>Apple Watch:</strong> watchOS 9.0 or later<br>
+            <strong>iPhone:</strong> iOS 16.0 or later<br>
+            <strong>Internet:</strong> Wi-Fi or cellular connection required<br>
+            <strong>Storage:</strong> Minimum 50MB available space</p>
+        </div>
+
+        <h2>Supported Languages</h2>
+        <p>TapVoice supports voice recognition and responses in:</p>
+        <ul>
+            <li>English (US, UK, Australia, Canada, India)</li>
+            <li>Finnish (Finland)</li>
+            <li>Swedish (Sweden)</li>
+            <li>German (Germany)</li>
+            <li>French (France)</li>
+            <li>Spanish (Spain)</li>
+            <li>Italian (Italy)</li>
+            <li>Portuguese (Portugal)</li>
+            <li>Dutch (Netherlands)</li>
+        </ul>
+
+        <h2>Privacy & Data</h2>
+        <p>TapVoice is designed with privacy as the top priority:</p>
+        <ul>
+            <li>All conversation history stored locally on your devices</li>
+            <li>No user tracking or analytics collection</li>
+            <li>Voice recordings are not stored anywhere</li>
+            <li>Questions processed securely through OpenAI API</li>
+            <li>No data sharing with third parties</li>
+        </ul>
+        <p>For complete details, see our <a href="https://claritytoolslab.github.io/tapvoice-privacy/privacy.html" style="color: #007aff;">Privacy Policy</a>.</p>
+
+        <div class="contact-info">
+            <h2>Still Need Help?</h2>
+            <p>If you can't find the answer to your question above, please don't hesitate to reach out:</p>
+            <p><a href="mailto:tapvoiceai@gmail.com">tapvoiceai@gmail.com</a></p>
+            <p>We're here to help make your TapVoice experience amazing!</p>
+        </div>
+    </div>
+</body>
+</html>
