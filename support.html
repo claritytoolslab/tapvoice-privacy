@@ -4,140 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TapVoice Support - AI Voice Assistant</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemUI, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
-            color: #e5e5e7;
-            background: linear-gradient(135deg, #1a1a2e 0%, #000000 100%);
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            color: #007aff;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-
-        h2 {
-            color: #34c759;
-            margin: 30px 0 15px 0;
-            font-size: 1.4rem;
-            font-weight: 600;
-            border-bottom: 2px solid #34c759;
-            padding-bottom: 8px;
-        }
-
-        h3 {
-            color: #ff9500;
-            margin: 20px 0 10px 0;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        p, li {
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            background: rgba(0, 122, 255, 0.1);
-            border: 1px solid #007aff;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .contact-info a {
-            color: #007aff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .faq-item {
-            background: rgba(52, 199, 89, 0.08);
-            border-left: 4px solid #34c759;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .faq-question {
-            font-weight: 600;
-            color: #34c759;
-            margin-bottom: 8px;
-        }
-
-        .troubleshoot-item {
-            background: rgba(255, 149, 0, 0.08);
-            border-left: 4px solid #ff9500;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .app-info {
-            background: rgba(142, 142, 147, 0.1);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px 15px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="description" content="Get help with TapVoice. FAQ, troubleshooting, and support for the AI voice assistant for Apple Watch.">
 </head>
 <body>
     <div class="container">
-        <h1>TapVoice Support</h1>
-        
+        <header class="page-header">
+            <nav class="breadcrumb">
+                <a href="./">TapVoice</a> → <span>Support</span>
+            </nav>
+            <h1>TapVoice Support</h1>
+        </header>
+
         <div class="contact-info">
             <h2>Contact Support</h2>
             <p>For technical support, billing questions, or feature requests:</p>
             <p><strong>Email:</strong> <a href="mailto:tapvoiceai@gmail.com">tapvoiceai@gmail.com</a></p>
             <p>We typically respond within 24-48 hours</p>
+            <div class="contact-links">
+                <a href="feedback/" class="contact-link">📝 Submit Feedback</a>
+                <a href="feedback/" class="contact-link">🐛 Report Bug</a>
+            </div>
         </div>
 
         <h2>Frequently Asked Questions</h2>
-        
+
         <div class="faq-item">
             <div class="faq-question">How do I use TapVoice on my Apple Watch?</div>
             <p>Simply open TapVoice on your Apple Watch, tap the microphone button, speak your question, and wait for the AI response. The answer will be displayed on screen and spoken aloud.</p>
@@ -146,10 +37,10 @@
         <div class="faq-item">
             <div class="faq-question">What subscription plans are available?</div>
             <p>
-                • <strong>Free:</strong> 3 questions total (lifetime)<br>
-                • <strong>Starter:</strong> 240 questions/month + 60 web searches (€2.99/month)<br>
-                • <strong>Pro:</strong> 750 questions/month + 150 web searches (€6.99/month)<br>
-                • <strong>Max:</strong> 1,800 questions/month + 300 web searches (€12.99/month)
+                • <strong>Free:</strong> 10 questions total (lifetime)<br>
+                • <strong>Starter:</strong> 100 questions/month (€2.99/month)<br>
+                • <strong>Pro:</strong> 300 questions/month (€6.99/month)<br>
+                • <strong>Max:</strong> 500 questions/month (€12.99/month)
             </p>
         </div>
 
@@ -246,7 +137,7 @@
             <li>Questions processed securely through OpenAI API</li>
             <li>No data sharing with third parties</li>
         </ul>
-        <p>For complete details, see our <a href="https://claritytoolslab.github.io/tapvoice-privacy/privacy.html" style="color: #007aff;">Privacy Policy</a>.</p>
+        <p>For complete details, see our <a href="privacy.html">Privacy Policy</a>.</p>
 
         <div class="contact-info">
             <h2>Still Need Help?</h2>
@@ -254,6 +145,14 @@
             <p><a href="mailto:tapvoiceai@gmail.com">tapvoiceai@gmail.com</a></p>
             <p>We're here to help make your TapVoice experience amazing!</p>
         </div>
+
+        <footer class="page-footer">
+            <div class="footer-nav">
+                <a href="./">← Back to Home</a>
+                <a href="feedback/">Submit Feedback</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
