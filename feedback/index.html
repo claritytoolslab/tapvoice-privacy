@@ -17,32 +17,21 @@
             <p class="header-subtitle">100% anonymous - no login, no tracking, completely private</p>
         </header>
 
-        <section class="feedback-intro">
-            <div class="intro-card">
-                <h2>🤝 Your Voice Matters</h2>
-                <p>We want to hear your thoughts about TapVoice. All feedback is completely anonymous and private - no user account or login required.</p>
-                <div class="intro-features">
-                    <div class="intro-feature">
-                        <span class="intro-icon">🔒</span>
-                        <strong>100% Anonymous</strong><br>
-                        No login or personal information
-                    </div>
-                    <div class="intro-feature">
-                        <span class="intro-icon">⚡</span>
-                        <strong>Quick and Easy</strong><br>
-                        Just a few fields to fill
-                    </div>
-                    <div class="intro-feature">
-                        <span class="intro-icon">🛡️</span>
-                        <strong>Private</strong><br>
-                        Feedback goes directly to developer
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="feedback-forms">
-            <h2>Choose your feedback type:</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666; font-size: 14px;">Anonymous feedback • No login required</p>
+
+            <style>
+            @media (max-width: 768px) {
+                .form-section { margin-bottom: 15px; }
+                .form-header { padding: 10px 15px; }
+                .form-header h3 { font-size: 16px; margin-bottom: 5px; }
+                .form-header p { font-size: 13px; margin-bottom: 0; }
+                .feedback-form { padding: 15px; }
+                .form-group { margin-bottom: 15px; }
+                .form-group textarea { rows: 3; }
+                .header-subtitle { font-size: 13px; margin-bottom: 15px; }
+            }
+            </style>
 
             <!-- Feature Request Form -->
             <div class="form-section" id="feature-section">
@@ -63,7 +52,7 @@
 
                     <div class="form-group">
                         <label for="feature-description">Describe Your Idea *</label>
-                        <textarea id="feature-description" name="feature_description" required rows="5" placeholder="Tell us more about what you'd like TapVoice to do. How would it work?"></textarea>
+                        <textarea id="feature-description" name="feature_description" required rows="3" placeholder="Tell us more about what you'd like TapVoice to do. How would it work?"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -98,7 +87,7 @@
 
                     <div class="form-group">
                         <label for="bug-details">What happened? *</label>
-                        <textarea id="bug-details" name="bug_details" required rows="4" placeholder="Describe what you did and what went wrong. For example: 'I asked about weather, but the app crashed instead of responding.'"></textarea>
+                        <textarea id="bug-details" name="bug_details" required rows="3" placeholder="Describe what you did and what went wrong. For example: 'I asked about weather, but the app crashed instead of responding.'"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -133,7 +122,7 @@
 
                     <div class="form-group">
                         <label for="general-message">Your Message *</label>
-                        <textarea id="general-message" name="feedback_message" required rows="6" placeholder="Share your thoughts about TapVoice. What's good? What could be improved? Is anything unclear?"></textarea>
+                        <textarea id="general-message" name="feedback_message" required rows="3" placeholder="Share your thoughts about TapVoice. What's good? What could be improved? Is anything unclear?"></textarea>
                     </div>
 
                     <div class="form-group">
