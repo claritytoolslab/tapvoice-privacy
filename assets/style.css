@@ -745,3 +745,195 @@ footer {
         padding: 40px 20px;
     }
 }
+
+/* Form Styles for Anonymous Feedback */
+.feedback-forms {
+    margin: 50px 0;
+}
+
+.form-section {
+    background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%);
+    border-radius: 16px;
+    margin: 40px 0;
+    padding: 30px;
+    border: 1px solid #333;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.form-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.form-header h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.form-header p {
+    color: #a1a1a6;
+    font-size: 1rem;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: #000000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007AFF;
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #86868b;
+}
+
+.form-group small {
+    display: block;
+    color: #86868b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn.primary {
+    background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
+    color: white;
+}
+
+.submit-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 122, 255, 0.4);
+}
+
+.submit-btn.secondary {
+    background: linear-gradient(135deg, #FF3B30 0%, #D12B20 100%);
+    color: white;
+}
+
+.submit-btn.secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 59, 48, 0.4);
+}
+
+.submit-btn.tertiary {
+    background: linear-gradient(135deg, #34C759 0%, #28A745 100%);
+    color: white;
+}
+
+.submit-btn.tertiary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(52, 199, 89, 0.4);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* FAQ Grid for Feedback Page */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.faq-grid .faq-item {
+    background: #1d1d1f;
+    border-left: 4px solid #007AFF;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.faq-grid .faq-item h3 {
+    color: #007AFF;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.faq-grid .faq-item p {
+    color: #a1a1a6;
+    margin-bottom: 0;
+}
+
+/* Responsive Form Styles */
+@media (max-width: 768px) {
+    .form-section {
+        padding: 20px;
+        margin: 30px 0;
+    }
+
+    .form-icon {
+        font-size: 2.5rem;
+    }
+
+    .form-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}

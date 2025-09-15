@@ -3,142 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TapVoice Feedback - Shape the Future</title>
+    <title>TapVoice Feedback - Anna Palautetta</title>
     <link rel="stylesheet" href="../assets/style.css">
-    <meta name="description" content="Share feedback, request features, and report bugs for TapVoice. Public, transparent, community-driven development.">
+    <meta name="description" content="Anna anonyymiä palautetta TapVoice:sta. Ei kirjautumista tarvita. Ehdota ominaisuuksia, ilmoita bugeista tai jätä yleistä palautetta.">
 </head>
 <body>
     <div class="container">
         <header class="page-header">
             <nav class="breadcrumb">
-                <a href="../">TapVoice</a> → <span>Feedback</span>
+                <a href="../">TapVoice</a> → <span>Anna Palautetta</span>
             </nav>
-            <h1>Shape the Future of TapVoice</h1>
-            <p class="header-subtitle">Ask for a new feature, see what others have requested. Report an issue, all visible, help is near.</p>
+            <h1>💬 Anna Palautetta TapVoice:sta</h1>
+            <p class="header-subtitle">100% anonyymi - ei kirjautumista, ei seurantaa, täysin yksityistä</p>
         </header>
 
         <section class="feedback-intro">
             <div class="intro-card">
-                <h2>🤝 Community-Driven Development</h2>
-                <p><strong>Anonymous communication</strong> - I don't follow you automatically, but comments and help create better service for you.</p>
+                <h2>🤝 Sinun äänesi on tärkeä</h2>
+                <p>Haluamme kuulla mielipiteesi TapVoice:sta. Kaikki palaute on täysin anonyymiä ja yksityistä - ei tarvita käyttäjätiliä tai kirjautumista.</p>
                 <div class="intro-features">
                     <div class="intro-feature">
-                        <span class="intro-icon">👀</span>
-                        <strong>Transparent</strong><br>
-                        All feedback is public and visible
-                    </div>
-                    <div class="intro-feature">
-                        <span class="intro-icon">🗳️</span>
-                        <strong>Democratic</strong><br>
-                        Vote on features you want most
-                    </div>
-                    <div class="intro-feature">
                         <span class="intro-icon">🔒</span>
-                        <strong>Anonymous</strong><br>
-                        Only GitHub account needed
+                        <strong>100% Anonyymi</strong><br>
+                        Ei kirjautumista tai henkilötietoja
+                    </div>
+                    <div class="intro-feature">
+                        <span class="intro-icon">⚡</span>
+                        <strong>Nopea ja helppo</strong><br>
+                        Vain muutama kenttä täytettävänä
+                    </div>
+                    <div class="intro-feature">
+                        <span class="intro-icon">🛡️</span>
+                        <strong>Yksityinen</strong><br>
+                        Palaute tulee suoraan kehittäjälle
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="feedback-actions">
-            <h2>How Can We Help You?</h2>
-            <div class="action-grid">
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/issues/new?assignees=&labels=enhancement&projects=&template=feature-request.md&title=%5BFEATURE%5D+" class="action-card primary" target="_blank" rel="noopener">
-                    <div class="action-icon">🚀</div>
-                    <h3>Request a Feature</h3>
-                    <p>Have an idea for improving TapVoice? Share it with the community and see how many others want it too.</p>
-                    <div class="action-examples">
-                        <strong>Examples:</strong> New language support, Apple Watch complications, iPad app, voice shortcuts
-                    </div>
-                    <div class="action-cta">Suggest Feature →</div>
-                </a>
+        <section class="feedback-forms">
+            <h2>Valitse palautteen tyyppi:</h2>
 
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/issues/new?assignees=&labels=bug&projects=&template=bug-report.md&title=%5BBUG%5D+" class="action-card secondary" target="_blank" rel="noopener">
-                    <div class="action-icon">🐛</div>
-                    <h3>Report a Bug</h3>
-                    <p>Found something that's not working correctly? Help us fix it by reporting the issue with details.</p>
-                    <div class="action-examples">
-                        <strong>Examples:</strong> App crashes, audio not playing, subscription issues, connectivity problems
-                    </div>
-                    <div class="action-cta">Report Bug →</div>
-                </a>
+            <!-- Feature Request Form -->
+            <div class="form-section" id="feature-section">
+                <div class="form-header">
+                    <div class="form-icon">🚀</div>
+                    <h3>Ehdota uutta ominaisuutta</h3>
+                    <p>Onko sinulla idea siitä, miten TapVoice voisi olla vielä parempi?</p>
+                </div>
 
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/discussions/new?category=general" class="action-card tertiary" target="_blank" rel="noopener">
-                    <div class="action-icon">💡</div>
-                    <h3>General Feedback</h3>
-                    <p>Share thoughts, ask questions, or start a discussion about TapVoice with the community.</p>
-                    <div class="action-examples">
-                        <strong>Examples:</strong> User experience feedback, questions about features, suggestions for improvements
+                <form action="https://formspree.io/f/xvgbnrzg" method="POST" class="feedback-form" id="feature-form">
+                    <input type="hidden" name="feedback_type" value="Feature Request">
+                    <input type="hidden" name="_subject" value="TapVoice Feature Request">
+
+                    <div class="form-group">
+                        <label for="feature-title">Ominaisuuden nimi *</label>
+                        <input type="text" id="feature-title" name="feature_title" required placeholder="Esim. iPad-tuki, Siri Shortcuts, uusi kieli...">
                     </div>
-                    <div class="action-cta">Start Discussion →</div>
-                </a>
+
+                    <div class="form-group">
+                        <label for="feature-description">Kuvaa ideaasi *</label>
+                        <textarea id="feature-description" name="feature_description" required rows="5" placeholder="Kerro tarkemmin mitä haluaisit TapVoice:en tekevän. Miten se toimisi?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feature-why">Miksi tämä olisi hyödyllistä? (valinnainen)</label>
+                        <textarea id="feature-why" name="feature_why" rows="3" placeholder="Miten tämä ominaisuus parantaisi TapVoice-kokemustasi?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feature-contact">Yhteystiedot (valinnainen)</label>
+                        <input type="email" id="feature-contact" name="contact_email" placeholder="sähköposti@esimerkki.fi - jos haluat vastauksen">
+                        <small>Jätä tyhjäksi jos haluat pysyä täysin anonyymina</small>
+                    </div>
+
+                    <!-- Honeypot spam protection -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="submit-btn primary">🚀 Lähetä ominaisuusehdotus</button>
+                </form>
+            </div>
+
+            <!-- Bug Report Form -->
+            <div class="form-section" id="bug-section">
+                <div class="form-header">
+                    <div class="form-icon">🐛</div>
+                    <h3>Ilmoita ongelmasta</h3>
+                    <p>Löysitkö bugin tai jotain mikä ei toimi oikein?</p>
+                </div>
+
+                <form action="https://formspree.io/f/xvgbnrzg" method="POST" class="feedback-form" id="bug-form">
+                    <input type="hidden" name="feedback_type" value="Bug Report">
+                    <input type="hidden" name="_subject" value="TapVoice Bug Report">
+
+                    <div class="form-group">
+                        <label for="bug-title">Ongelman lyhyt kuvaus *</label>
+                        <input type="text" id="bug-title" name="bug_title" required placeholder="Esim. Sovellus kaatuu kun kysyn säästä">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bug-steps">Mitä teit kun ongelma tapahtui? *</label>
+                        <textarea id="bug-steps" name="bug_steps" required rows="4" placeholder="1. Avasin TapVoice:n Apple Watchissa&#10;2. Painoin mikrofoni-nappia&#10;3. Sanoin 'mikä on sää tänään'&#10;4. ..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bug-expected">Mitä odotit tapahtuvan? *</label>
+                        <textarea id="bug-expected" name="bug_expected" required rows="3" placeholder="Odotin että TapVoice kertoisi sään..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bug-actual">Mitä sen sijaan tapahtui? *</label>
+                        <textarea id="bug-actual" name="bug_actual" required rows="3" placeholder="Sovellus kaatui / näytölle tuli virheilmoitus / ei tapahtunut mitään..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bug-device">Laitteen tiedot (valinnainen)</label>
+                        <input type="text" id="bug-device" name="device_info" placeholder="Esim. Apple Watch Series 8, watchOS 10.1">
+                        <small>Auttaa ongelman ratkaisemisessa</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bug-contact">Yhteystiedot (valinnainen)</label>
+                        <input type="email" id="bug-contact" name="contact_email" placeholder="sähköposti@esimerkki.fi - jos haluat vastauksen">
+                        <small>Jätä tyhjäksi jos haluat pysyä täysin anonyymina</small>
+                    </div>
+
+                    <!-- Honeypot spam protection -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="submit-btn secondary">🐛 Lähetä vikailmoitus</button>
+                </form>
+            </div>
+
+            <!-- General Feedback Form -->
+            <div class="form-section" id="general-section">
+                <div class="form-header">
+                    <div class="form-icon">💡</div>
+                    <h3>Yleinen palaute</h3>
+                    <p>Jotain muuta mielessä? Kerro vapaasti!</p>
+                </div>
+
+                <form action="https://formspree.io/f/xvgbnrzg" method="POST" class="feedback-form" id="general-form">
+                    <input type="hidden" name="feedback_type" value="General Feedback">
+                    <input type="hidden" name="_subject" value="TapVoice General Feedback">
+
+                    <div class="form-group">
+                        <label for="general-subject">Aihe (valinnainen)</label>
+                        <input type="text" id="general-subject" name="feedback_subject" placeholder="Esim. Käyttökokemus, hinnoittelu, käyttöliittymä...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="general-message">Viestisi *</label>
+                        <textarea id="general-message" name="feedback_message" required rows="6" placeholder="Kerro mielipiteesi TapVoice:sta. Mikä on hyvää? Mitä voisi parantaa? Onko jotain epäselvää?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="general-contact">Yhteystiedot (valinnainen)</label>
+                        <input type="email" id="general-contact" name="contact_email" placeholder="sähköposti@esimerkki.fi - jos haluat vastauksen">
+                        <small>Jätä tyhjäksi jos haluat pysyä täysin anonyymina</small>
+                    </div>
+
+                    <!-- Honeypot spam protection -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="submit-btn tertiary">💡 Lähetä palaute</button>
+                </form>
             </div>
         </section>
 
-        <section class="feedback-existing">
-            <h2>Join Ongoing Conversations</h2>
-            <div class="existing-feedback">
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement+sort%3Areactions-%2B1-desc" class="existing-card" target="_blank" rel="noopener">
-                    <div class="existing-icon">🔥</div>
-                    <h3>Popular Feature Requests</h3>
-                    <p>See what features the community wants most and add your vote</p>
-                    <div class="existing-cta">View & Vote →</div>
-                </a>
-
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc" class="existing-card" target="_blank" rel="noopener">
-                    <div class="existing-icon">🚨</div>
-                    <h3>Active Bug Reports</h3>
-                    <p>Help prioritize fixes by voting on bugs that affect you too</p>
-                    <div class="existing-cta">View Issues →</div>
-                </a>
-
-                <a href="https://github.com/claritytoolslab/tapvoice-feedback/discussions" class="existing-card" target="_blank" rel="noopener">
-                    <div class="existing-icon">💬</div>
-                    <h3>Community Discussions</h3>
-                    <p>Join ongoing conversations about TapVoice development</p>
-                    <div class="existing-cta">Join Discussions →</div>
-                </a>
-            </div>
-        </section>
-
-        <section class="feedback-help">
-            <h2>How to Use GitHub Feedback</h2>
-            <div class="help-grid">
-                <div class="help-item">
-                    <h3>1. 📝 Submit Feedback</h3>
-                    <p>Click any button above to open GitHub with a pre-filled template. You'll need a free GitHub account.</p>
+        <section class="feedback-info">
+            <h2>❓ Usein kysyttyä</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Onko palaute todella anonyymiä?</h3>
+                    <p>Kyllä! Emme kerää mitään henkilötietoja. Lomake lähettää vain sen mitä kirjoitat. Jos jätät yhteystiedot tyhjäksi, emme tiedä kuka olet.</p>
                 </div>
-                <div class="help-item">
-                    <h3>2. 👍 Vote on Ideas</h3>
-                    <p>Use the thumbs up (👍) reaction to vote on features and bugs you care about. Higher votes = higher priority.</p>
+                <div class="faq-item">
+                    <h3>Saanko vastauksen palautteeseeni?</h3>
+                    <p>Jos jätät yhteystiedot, vastaamme mahdollisuuksien mukaan. Jos haluat pysyä anonyymina, emme voi vastata.</p>
                 </div>
-                <div class="help-item">
-                    <h3>3. 💬 Join Discussions</h3>
-                    <p>Comment on existing feedback to add context, share your experience, or propose improvements.</p>
+                <div class="faq-item">
+                    <h3>Kuinka nopeasti palaute käsitellään?</h3>
+                    <p>Luemme kaiken palautteen henkilökohtaisesti. Vastaamme yleensä 2-3 päivän sisällä.</p>
                 </div>
-                <div class="help-item">
-                    <h3>4. 📺 Follow Progress</h3>
-                    <p>Watch issues you care about to get notified when they're implemented or need more information.</p>
+                <div class="faq-item">
+                    <h3>Voinko lähettää kuvia tai liitteitä?</h3>
+                    <p>Tämä lomake ei tue liitteitä. Jos tarvitset lähettää kuvia (esim. bug-raportissa), ota yhteyttä suoraan: tapvoiceai@gmail.com</p>
                 </div>
             </div>
         </section>
 
         <section class="feedback-privacy">
             <div class="privacy-note">
-                <h3>🔒 Your Privacy</h3>
-                <p>This feedback system uses GitHub Issues and Discussions. While your feedback is public (helping transparency), you only need a GitHub account - no personal information required. We don't track who you are or collect additional data beyond what GitHub provides.</p>
-                <a href="../privacy.html">Read full Privacy Policy →</a>
+                <h3>🔒 Yksityisyys ja tietosuoja</h3>
+                <p>Tämä palautelomake käyttää Formspree-palvelua turvalliseen viestin välitykseen. Kaikki palaute lähetetään salatulla yhteydellä suoraan kehittäjälle. Emme kerää analytiikkaa tai seuranta-tietoja.</p>
+                <p>Jos haluat tietää enemmän yksityisyydestämme, lue <a href="../privacy.html">täydellinen tietosuojaselosteemme</a>.</p>
             </div>
         </section>
 
         <footer class="page-footer">
             <div class="footer-nav">
-                <a href="../">← Back to Home</a>
-                <a href="../support.html">Need Help?</a>
-                <a href="mailto:tapvoiceai@gmail.com">Direct Contact</a>
+                <a href="../">← Takaisin etusivulle</a>
+                <a href="../support.html">Tarvitsetko apua?</a>
+                <a href="mailto:tapvoiceai@gmail.com">Suora yhteydenotto</a>
             </div>
         </footer>
     </div>
+
+    <script>
+        // Simple form submission handling
+        document.querySelectorAll('.feedback-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                const submitBtn = this.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+
+                submitBtn.textContent = 'Lähetetään...';
+                submitBtn.disabled = true;
+
+                // Let the form submit naturally, but handle the UI feedback
+                setTimeout(() => {
+                    submitBtn.textContent = 'Kiitos! ✅';
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        form.reset();
+                    }, 3000);
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
