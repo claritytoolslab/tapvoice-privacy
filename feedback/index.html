@@ -21,29 +21,38 @@
             <p style="text-align: center; margin-bottom: 20px; color: #666; font-size: 14px;">Anonymous feedback • No login required</p>
 
             <!-- Quick Selection Buttons -->
-            <div class="form-selector" style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
-                <button onclick="showForm('feature')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 15px; border: 2px solid #e0e0e0; background: white; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
-                    <div style="font-size: 20px; margin-bottom: 5px;">🚀</div>
-                    <div style="font-weight: bold; color: #333;">New Feature</div>
-                    <div style="font-size: 12px; color: #666;">Suggest ideas</div>
+            <div class="form-selector" style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+                <button onclick="showForm('feature')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 20px; border: 1px solid #333; background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%); border-radius: 16px; cursor: pointer;">
+                    <div style="font-size: 24px; margin-bottom: 8px;">🚀</div>
+                    <div style="font-weight: bold; color: #e5e5e7; font-size: 16px;">New Feature</div>
+                    <div style="font-size: 13px; color: #a1a1a6;">Suggest ideas</div>
                 </button>
 
-                <button onclick="showForm('general')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 15px; border: 2px solid #e0e0e0; background: white; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
-                    <div style="font-size: 20px; margin-bottom: 5px;">💬</div>
-                    <div style="font-weight: bold; color: #333;">Feedback</div>
-                    <div style="font-size: 12px; color: #666;">Share thoughts</div>
+                <button onclick="showForm('general')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 20px; border: 1px solid #333; background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%); border-radius: 16px; cursor: pointer;">
+                    <div style="font-size: 24px; margin-bottom: 8px;">💬</div>
+                    <div style="font-weight: bold; color: #e5e5e7; font-size: 16px;">Feedback</div>
+                    <div style="font-size: 13px; color: #a1a1a6;">Share thoughts</div>
                 </button>
 
-                <button onclick="showForm('bug')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 15px; border: 2px solid #e0e0e0; background: white; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
-                    <div style="font-size: 20px; margin-bottom: 5px;">🐛</div>
-                    <div style="font-weight: bold; color: #333;">Report Bug</div>
-                    <div style="font-size: 12px; color: #666;">Something broken</div>
+                <button onclick="showForm('bug')" class="selector-btn" style="flex: 1; min-width: 140px; padding: 20px; border: 1px solid #333; background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%); border-radius: 16px; cursor: pointer;">
+                    <div style="font-size: 24px; margin-bottom: 8px;">🐛</div>
+                    <div style="font-weight: bold; color: #e5e5e7; font-size: 16px;">Report Bug</div>
+                    <div style="font-size: 13px; color: #a1a1a6;">Something broken</div>
                 </button>
             </div>
 
             <style>
-            .selector-btn:hover { border-color: #007AFF; background: #f8f9ff; }
-            .selector-btn.active { border-color: #007AFF; background: #007AFF; color: white; }
+            .selector-btn:hover {
+                border-color: #007AFF;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
+            }
+            .selector-btn.active {
+                border-color: #007AFF;
+                background: #007AFF !important;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 122, 255, 0.4);
+            }
             .selector-btn.active div { color: white !important; }
             .form-section { display: none; margin-bottom: 15px; }
             @media (max-width: 768px) {
@@ -208,7 +217,9 @@
     <script>
         // Show/hide forms based on selection
         function showForm(formType) {
-            // Hide all forms
+            console.log('showForm called with:', formType);
+
+            // Hide all forms immediately
             document.querySelectorAll('.form-section').forEach(section => {
                 section.style.display = 'none';
             });
@@ -218,18 +229,37 @@
                 btn.classList.remove('active');
             });
 
-            // Show selected form
+            // Show selected form immediately
             const formMap = {
                 'feature': 'feature-section',
                 'bug': 'bug-section',
                 'general': 'general-section'
             };
 
-            document.getElementById(formMap[formType]).style.display = 'block';
+            const targetForm = document.getElementById(formMap[formType]);
+            if (targetForm) {
+                targetForm.style.display = 'block';
+                console.log('Form displayed:', formMap[formType]);
+            }
 
-            // Add active class to clicked button
-            event.target.closest('.selector-btn').classList.add('active');
+            // Add active class to clicked button using event delegation
+            const clickedButton = event ? event.target.closest('.selector-btn') : null;
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
         }
+
+        // Alternative approach with direct event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.selector-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const formType = this.getAttribute('onclick').match(/'(\w+)'/)[1];
+                    showForm(formType);
+                    this.classList.add('active');
+                });
+            });
+        });
 
         // Handle hash navigation (from app links)
         window.addEventListener('load', function() {
