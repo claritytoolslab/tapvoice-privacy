@@ -1,463 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TapVoice</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Privacy Policy for TapVoice</title>
+    <meta name="description" content="TapVoice — Privacy-first AI voice assistant for Apple Watch">
+
     <style>
-        * {
-            box-sizing: border-box;
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+        color: #1d1d1f;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+        border-bottom: none;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      header h1 a {
+        color: #1d1d1f;
+        text-decoration: none;
+      }
+
+      header p {
+        color: #86868b;
+        font-size: 1rem;
+        margin-top: 8px;
+      }
+
+      section h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #1d1d1f;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 40px 0 16px;
+        color: #1d1d1f;
+      }
+
+      section h3 {
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 24px 0 12px;
+        color: #1d1d1f;
+      }
+
+      section p,
+      section li {
+        font-size: 1.05rem;
+        color: #1d1d1f;
+      }
+
+      section ul,
+      section ol {
+        padding-left: 20px;
+      }
+
+      section ul li,
+      section ol li {
+        padding: 4px 0;
+      }
+
+      a {
+        color: #0071e3;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: #0077ED;
+        text-decoration: underline;
+      }
+
+      blockquote {
+        background: #f5f5f7;
+        border-left: 4px solid #0071e3;
+        padding: 16px 20px;
+        margin: 24px 0;
+        border-radius: 8px;
+      }
+
+      blockquote p {
+        margin: 0;
+      }
+
+      code {
+        background: #f5f5f7;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 20px 20px;
+        color: #86868b;
+        font-size: 0.9rem;
+        border-top: 1px solid #d2d2d7;
+        margin-top: 80px;
+      }
+
+      footer a {
+        color: #0071e3;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #0071e3;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 768px) {
+        section h1 {
+          font-size: 1.75rem;
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
-            color: #e5e5e7;
-            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
+
+        section h2 {
+          font-size: 1.3rem;
         }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 40px 0;
-            border-bottom: 1px solid #333;
-        }
-        
-        h1 {
-            color: #007AFF;
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin: 0 0 20px 0;
-            letter-spacing: -0.02em;
-        }
-        
-        .subtitle {
-            color: #a1a1a6;
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 10px 0;
-        }
-        
-        .last-updated {
-            color: #86868b;
-            font-size: 0.9rem;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #1d1d1f;
-            border-radius: 8px;
-            display: inline-block;
-        }
-        
-        h2 {
-            color: #007AFF;
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #007AFF;
-            letter-spacing: -0.01em;
-        }
-        
-        h3 {
-            color: #34C759;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 30px 0 15px 0;
-        }
-        
-        p {
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-        
-        strong {
-            color: #ffffff;
-            font-weight: 600;
-        }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 0;
-        }
-        
-        li {
-            margin-bottom: 12px;
-            padding: 12px 0 12px 50px;
-            background: #1d1d1f;
-            border-radius: 8px;
-            margin-bottom: 8px;
-            position: relative;
-            font-size: 1rem;
-        }
-        
-        li::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 6px;
-            height: 6px;
-            background: #007AFF;
-            border-radius: 50%;
-        }
-        
-        ol {
-            margin: 20px 0;
-            padding-left: 0;
-            counter-reset: step-counter;
-        }
-        
-        ol li {
-            counter-increment: step-counter;
-            padding-left: 60px;
-        }
-        
-        ol li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-            background: #007AFF;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-        
-        .highlight {
-            background: linear-gradient(135deg, #1d1d1f 0%, #2a2a2a 100%);
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            border-left: 4px solid #007AFF;
-        }
-        
-        .privacy-badges {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
-        }
-        
-        .badge {
-            background: #1d1d1f;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid #333;
-        }
-        
-        .badge.good::before {
-            content: '✓';
-            display: block;
-            font-size: 1.5rem;
-            color: #34C759;
-            margin-bottom: 10px;
-        }
-        
-        .badge.bad::before {
-            content: '✗';
-            display: block;
-            font-size: 1.5rem;
-            color: #FF3B30;
-            margin-bottom: 10px;
-        }
-        
-        .contact {
-            background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 16px;
-            text-align: center;
-            margin-top: 50px;
-            box-shadow: 0 8px 32px rgba(0, 122, 255, 0.3);
-        }
-        
-        .contact h2 {
-            color: white;
-            border-bottom: none;
-            margin-bottom: 20px;
-        }
-        
-        .contact p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .footer-note {
-            text-align: center;
-            margin-top: 60px;
-            padding: 30px;
-            background: #1d1d1f;
-            border-radius: 12px;
-            color: #86868b;
-            font-style: italic;
-            border: 1px solid #333;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px 15px;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .privacy-badges {
-                grid-template-columns: 1fr;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Privacy Policy</h1>
-            <div class="subtitle">TapVoice - Privacy-First AI for Apple Watch</div>
-            <div class="last-updated">Last updated: August 12, 2025</div>
-        </div>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://claritytoolslab.github.io/tapvoice-privacy/">TapVoice</a></h1>
+        <p>AI Voice Assistant for Apple Watch</p>
+      </header>
 
-        <h2>Welcome to TapVoice</h2>
-        <p>TapVoice is a privacy-first Apple Watch app that lets you ask questions and get instant voice responses. We believe your privacy is fundamental, and we've built TapVoice with this principle at its core.</p>
+      <section>
+        <a href="index.html" class="back-link">← Back to home</a>
 
-    <h2>What Information We Collect</h2>
-    <p><strong>Good news: We collect minimal information, and none of it is personally identifiable.</strong></p>
+        <h1>Privacy Policy for TapVoice</h1>
 
-    <div class="privacy-badges">
-        <div class="badge bad">
-            <strong>No voice recordings</strong><br>
-            Your speech is processed locally and never stored
-        </div>
-        <div class="badge bad">
-            <strong>No personal data</strong><br>
-            We don't know who you are
-        </div>
-        <div class="badge bad">
-            <strong>No usage analytics</strong><br>
-            We don't track how you use the app
-        </div>
-        <div class="badge bad">
-            <strong>No cookies or tracking</strong><br>
-            We don't use any tracking technologies
-        </div>
-        <div class="badge bad">
-            <strong>No account creation</strong><br>
-            No login required
-        </div>
-    </div>
+        <p><strong>Last Updated:</strong> April 18, 2026</p>
 
-    <h3>Information We Do Collect</h3>
-    <div class="privacy-badges">
-        <div class="badge good">
-            <strong>App usage data</strong><br>
-            Basic statistics like how many questions you ask (stored locally on your device)
-        </div>
-        <div class="badge good">
-            <strong>Language preference</strong><br>
-            Your chosen language for speech recognition (stored locally)
-        </div>
-        <div class="badge good">
-            <strong>Subscription status</strong><br>
-            Your current plan level (managed by Apple)
-        </div>
-    </div>
+        <h2>Introduction</h2>
 
-    <h2>How Your Data is Protected</h2>
+        <p>TapVoice ("we," "our," or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our Apple Watch and iPhone application.</p>
 
-    <h3>Local Storage Only</h3>
-    <p>All your data stays on your Apple Watch and iPhone. We use:</p>
-    <ul>
-        <li><strong>Core Data</strong> for question history (stored locally)</li>
-        <li><strong>UserDefaults</strong> for app settings (stored locally)</li>
-        <li><strong>No cloud storage</strong> - Nothing goes to our servers</li>
-    </ul>
+        <p>TapVoice is designed with a <strong>privacy-first</strong> approach: your conversation history, language preferences, and audio recordings stay on your device. We do not operate servers that store your personal content.</p>
 
-    <h3>Voice Processing</h3>
-    <p>When you speak to TapVoice:</p>
-    <ol>
-        <li>Your voice is processed locally on your Apple Watch and converted to text</li>
-        <li>Text is sent to Google Gemini API for fast response generation (3-4 seconds)</li>
-        <li>OpenAI API creates premium voice audio from the response (2-3 seconds)</li>
-        <li><strong>Voice recordings are not stored by TapVoice</strong></li>
-        <li><strong>Your questions are not saved to any cloud service by TapVoice</strong></li>
-    </ol>
+        <h2>Information We Collect</h2>
 
-    <h2>Legal Basis for Processing (GDPR)</h2>
-    <p>For EU users, we process your data based on:</p>
-    <ul>
-        <li><strong>Legitimate Interest</strong> - To provide AI responses to your questions</li>
-        <li><strong>Consent</strong> - When you choose to use voice features and web search</li>
-        <li><strong>Contract Performance</strong> - To manage your subscription via Apple App Store</li>
-    </ul>
-
-    <div class="highlight">
-        <p><strong>Data Controller:</strong> Miika Kettunen, Finland<br>
-        <strong>Contact:</strong> tapvoiceai@gmail.com</p>
-    </div>
-
-    <h2>Third-Party Services</h2>
-
-    <h3>Google Gemini API</h3>
-    <ul>
-        <li>We use Google's Gemini 2.5 Flash model for ultra-fast text response generation</li>
-        <li>Your question text is sent to Google Gemini for processing</li>
-        <li>Question text may trigger real-time web searches via Google's grounding API</li>
-        <li>No search history is stored on our servers</li>
-        <li>Only your question text (converted from voice on-device) is sent to Google</li>
-        <li>Google's privacy policy applies to this data</li>
-        <li>We don't store your questions on our servers</li>
-    </ul>
-
-    <h3>OpenAI API (Voice Generation)</h3>
-    <ul>
-        <li>We use OpenAI's TTS (text-to-speech) API for premium voice responses</li>
-        <li>Only the AI-generated answer text is sent to OpenAI for voice synthesis</li>
-        <li>Your original questions are not sent to OpenAI</li>
-        <li>OpenAI's privacy policy applies to answer text processed for voice generation</li>
-        <li>We don't store voice recordings on our servers</li>
-    </ul>
-
-    <h4>OpenAI Privacy Information</h4>
-    <ul>
-        <li><strong>OpenAI Privacy Policy:</strong> <a href="https://openai.com/policies/privacy-policy" target="_blank" style="color: #007AFF;">https://openai.com/policies/privacy-policy</a></li>
-        <li><strong>Data Processing Addendum:</strong> <a href="https://openai.com/policies/data-processing-addendum" target="_blank" style="color: #007AFF;">https://openai.com/policies/data-processing-addendum</a></li>
-        <li><strong>OpenAI Ireland Limited:</strong> 1st Floor, The Liffey Trust Centre, 117-126 Sheriff Street Upper, Dublin 1, Ireland</li>
-    </ul>
-
-    <h3>Google Gemini Data Processing Agreement (DPA)</h3>
-    <div class="highlight">
-        <p><strong>CRITICAL: Only text is sent to Google Gemini for AI responses.</strong></p>
-        <p><strong>GDPR Compliance:</strong> We use Google Cloud's Gemini API with EU data processing compliance.</p>
+        <h3>1. Information You Provide</h3>
         <ul>
-            <li><strong>Voice Processing:</strong> Your voice is processed locally on your Apple Watch and converted to text</li>
-            <li><strong>Data Transfer:</strong> Only the converted text of your question is sent to Google Gemini</li>
-            <li><strong>Data Controller:</strong> TapVoice (Miika Kettunen) determines the purposes for processing your question text</li>
-            <li><strong>Data Processor:</strong> Google processes only your question text on our behalf according to our instructions</li>
-            <li><strong>Security Standards:</strong> Google Cloud maintains ISO 27001, SOC 2/3 certification with encryption at rest and in transit</li>
-            <li><strong>Data Retention:</strong> Google may retain inputs/outputs for abuse detection, then securely deletes them</li>
-            <li><strong>No Training Use:</strong> Your question text is not used to train Google's models</li>
-            <li><strong>International Transfers:</strong> Text data transfers use Google Cloud's GDPR compliance mechanisms including SCCs</li>
+          <li><strong>Voice Recordings</strong>: When you tap and hold the TapVoice button on your Apple Watch, the app records a short audio clip (up to 20 seconds) containing your question. The recording is sent to Google Gemini for transcription and answer generation, then discarded after the response is returned.</li>
+          <li><strong>Questions and Answers</strong>: The text of your question and the AI-generated answer are stored locally on your device as conversation history.</li>
+          <li><strong>Language Preference</strong>: Your selected response language is stored locally and synced between your Apple Watch and iPhone.</li>
         </ul>
-        <p><em>Reference: Google Cloud Data Processing and Security Terms - <a href="https://cloud.google.com/terms/data-processing-addendum" style="color: #007AFF;">https://cloud.google.com/terms/data-processing-addendum</a></em></p>
-    </div>
 
-    <h3>OpenAI Data Processing Agreement (DPA)</h3>
-    <div class="highlight">
-        <p><strong>CRITICAL: Only AI-generated answer text is sent to OpenAI for voice synthesis.</strong></p>
-        <p><strong>GDPR Compliance:</strong> We have implemented OpenAI's Data Processing Addendum (DPA) to ensure EU compliance.</p>
+        <h3>2. Automatically Collected Information</h3>
         <ul>
-            <li><strong>Voice Processing:</strong> Your voice is processed locally on your Apple Watch and converted to text</li>
-            <li><strong>Data Transfer:</strong> Only AI-generated answer text (not your questions) is sent to OpenAI for voice generation</li>
-            <li><strong>Data Controller:</strong> TapVoice (Miika Kettunen) determines the purposes for processing answer text</li>
-            <li><strong>Data Processor:</strong> OpenAI processes only answer text on our behalf for voice synthesis</li>
-            <li><strong>Security Standards:</strong> OpenAI maintains SOC 2 Type 2 certification with AES-256 encryption at rest and TLS 1.2+ in transit</li>
-            <li><strong>Data Retention:</strong> OpenAI may retain text inputs/outputs for up to 30 days for abuse detection, then securely deletes them</li>
-            <li><strong>No Training Use:</strong> Answer text is not used to train OpenAI's models</li>
-            <li><strong>International Transfers:</strong> Text data transfers to US use Standard Contractual Clauses (SCCs) for GDPR compliance</li>
+          <li><strong>Purchase Information</strong>: Apple StoreKit manages your in-app purchases (question packs). We do not receive or store your payment details.</li>
+          <li><strong>Question Counter</strong>: A local counter tracks how many questions you have asked to manage your free trial allotment (10 questions total) and remaining pack balance.</li>
         </ul>
-        <p><em>DPA Reference: OpenAI Data Processing Addendum (February 15, 2024)</em></p>
-    </div>
 
-    <h3>Apple Services</h3>
-    <ul>
-        <li><strong>App Store</strong> - Handles subscription payments</li>
-        <li><strong>WatchConnectivity</strong> - Syncs data between your iPhone and Apple Watch</li>
-        <li>Apple's privacy policies apply to these services</li>
-    </ul>
+        <h3>3. Information We Do NOT Collect</h3>
+        <ul>
+          <li>❌ No account creation or login required</li>
+          <li>❌ No personal identifiers (name, email, phone number)</li>
+          <li>❌ No device identifiers or advertising IDs</li>
+          <li>❌ No analytics or tracking SDKs</li>
+          <li>❌ No location data</li>
+          <li>❌ No contacts, photos, or other device content</li>
+        </ul>
 
-    <h2>Subscription and Payments</h2>
+        <h2>How We Use Your Information</h2>
 
-    <h3>Payment Processing</h3>
-    <ul>
-        <li>All payments are processed by <strong>Apple App Store</strong></li>
-        <li>We never see your payment information</li>
-        <li>Apple handles all billing and subscription management</li>
-        <li>Subscription data is managed by Apple's systems</li>
-    </ul>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Transcribe your voice question and generate an answer using Google Gemini</li>
+          <li>Convert the answer text into spoken audio using OpenAI's text-to-speech service</li>
+          <li>Display and speak the answer on your Apple Watch</li>
+          <li>Save conversation history locally on your device</li>
+          <li>Manage your free trial and question pack balance</li>
+        </ul>
 
-    <h3>Available Plans</h3>
-    <ul>
-        <li><strong>Free Trial</strong> - 10 questions total (lifetime limit)</li>
-        <li><strong>Starter</strong> - 100 questions/month (€2.99/month)</li>
-        <li><strong>Pro</strong> - 300 questions/month (€6.99/month)</li>
-        <li><strong>Max</strong> - 500 questions/month (€12.99/month)</li>
-    </ul>
+        <h2>Third-Party Services</h2>
 
-    <h2>Your Rights</h2>
+        <p>TapVoice sends your voice recording and the resulting text to the following services to deliver the answer. These services process your data under their own privacy policies and Data Processing Addendums (DPAs).</p>
 
-    <h3>GDPR Rights (EU Users)</h3>
-    <p>If you're located in the European Union, you have the following rights under GDPR:</p>
-    <ul>
-        <li><strong>Right to Access</strong> - Request information about what personal data we process</li>
-        <li><strong>Right to Rectification</strong> - Request correction of inaccurate personal data</li>
-        <li><strong>Right to Erasure</strong> - Request deletion of your personal data</li>
-        <li><strong>Right to Restrict Processing</strong> - Request limitation of processing your data</li>
-        <li><strong>Right to Data Portability</strong> - Request your data in a structured, machine-readable format</li>
-        <li><strong>Right to Object</strong> - Object to processing of your personal data</li>
-        <li><strong>Right to Withdraw Consent</strong> - Withdraw your consent at any time</li>
-    </ul>
+        <h3>Google Gemini (AI Processing)</h3>
+        <p>We use Google's Gemini 2.5 Flash model to transcribe your audio and generate answers. Audio data and text are sent to Google for processing, and Google's Search grounding may be used to answer questions about current information.</p>
+        <ul>
+          <li><strong>Google Privacy Policy</strong>: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+          <li><strong>Gemini API Additional Terms</strong>: <a href="https://ai.google.dev/gemini-api/terms">https://ai.google.dev/gemini-api/terms</a></li>
+          <li><strong>Google Cloud DPA</strong>: <a href="https://cloud.google.com/terms/data-processing-addendum">https://cloud.google.com/terms/data-processing-addendum</a></li>
+        </ul>
+        <p><strong>Important:</strong> Google does not use Gemini API data from paid usage to train or improve their models. Requests are processed in real time.</p>
 
-    <div class="highlight">
-        <p><strong>Important:</strong> Since TapVoice stores all data locally on your device and doesn't collect personally identifiable information, exercising most of these rights simply involves deleting the app or clearing its data in iOS Settings.</p>
-    </div>
+        <h3>OpenAI (Voice Synthesis)</h3>
+        <p>We use OpenAI's text-to-speech API (<code>gpt-4o-mini-tts</code>) to convert the text answer into audio that plays on your Apple Watch. Only the answer text is sent to OpenAI — not your original recording.</p>
+        <ul>
+          <li><strong>OpenAI Privacy Policy</strong>: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
+          <li><strong>OpenAI Enterprise Privacy &amp; DPA</strong>: <a href="https://openai.com/enterprise-privacy">https://openai.com/enterprise-privacy</a></li>
+        </ul>
+        <p><strong>Important:</strong> OpenAI does not use data submitted via their API to train their models. API data is retained for up to 30 days for abuse monitoring and then deleted.</p>
 
-    <h3>Access and Control</h3>
-    <ul>
-        <li><strong>Delete your data</strong> - Clear app data in iOS Settings</li>
-        <li><strong>Export your data</strong> - Contact us for a copy of your local data</li>
-        <li><strong>Opt out</strong> - Stop using the app anytime</li>
-        <li><strong>GDPR complaints</strong> - Contact your local data protection authority if needed</li>
-    </ul>
+        <h3>Supabase (Secure API Proxy)</h3>
+        <p>We use Supabase Edge Functions as a secure proxy to route text-to-speech requests to OpenAI. This keeps API keys off your device.</p>
+        <ul>
+          <li>Requests pass through Supabase over HTTPS and are not stored at rest.</li>
+          <li><strong>Supabase Privacy Policy</strong>: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
+          <li><strong>Supabase DPA</strong>: <a href="https://supabase.com/legal/dpa">https://supabase.com/legal/dpa</a></li>
+        </ul>
 
-    <h3>Data Retention</h3>
-    <ul>
-        <li><strong>Local data</strong> - Stored until you delete the app</li>
-        <li><strong>No server data</strong> - We don't store anything on our servers</li>
-        <li><strong>Apple data</strong> - Subject to Apple's retention policies</li>
-    </ul>
+        <h3>Apple (In-App Purchases &amp; Platform)</h3>
+        <p>In-app purchases are processed entirely by Apple StoreKit. We never see your credit card, Apple ID, or billing address.</p>
+        <ul>
+          <li><strong>Apple Privacy Policy</strong>: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+        </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>TapVoice is not intended for children under 13. We don't knowingly collect information from children under 13.</p>
+        <h2>Data Storage and Retention</h2>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy occasionally. We'll notify you of any changes by:</p>
-    <ul>
-        <li>Posting the new policy in the App Store</li>
-        <li>Updating the "Last updated" date above</li>
-    </ul>
+        <ul>
+          <li><strong>Local Storage</strong>: Conversation history, language preferences, and purchase state are stored on your device (iPhone and Apple Watch) using iOS/watchOS secure storage. We do not store this data on our servers.</li>
+          <li><strong>AI Processing</strong>: Audio and text sent to Google Gemini and OpenAI are processed in real time and deleted according to their respective data retention policies (typically up to 30 days, and never used for model training).</li>
+          <li><strong>Supabase</strong>: Acts only as a secure proxy — no user data is stored at rest.</li>
+          <li><strong>Apple StoreKit</strong>: Purchase data is retained by Apple as required for receipt validation and tax reporting.</li>
+        </ul>
 
-    <div class="contact">
+        <h2>Your Rights Under GDPR</h2>
+
+        <p>If you are in the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR):</p>
+
+        <ol>
+          <li><strong>Right to Access</strong>: You can review your full conversation history at any time within the app.</li>
+          <li><strong>Right to Deletion</strong>: You can clear your conversation history from within the app, or delete all data by uninstalling TapVoice from your iPhone and Apple Watch.</li>
+          <li><strong>Right to Rectification</strong>: You can edit or remove individual entries from your conversation history.</li>
+          <li><strong>Right to Data Portability</strong>: Since all data is stored locally, it remains under your direct control.</li>
+          <li><strong>Right to Object</strong>: You can object to AI processing by simply not using voice features.</li>
+          <li><strong>Right to Restrict Processing</strong>: You can disable specific features at any time.</li>
+          <li><strong>Right to Lodge a Complaint</strong>: You may contact your local data protection authority.</li>
+        </ol>
+
+        <p><strong>Legal Basis for Processing (GDPR Art. 6):</strong> We process your voice input on the legal basis of <em>performance of a contract</em> (delivering the AI answer you requested) and <em>legitimate interest</em> (fraud prevention and service reliability).</p>
+
+        <h2>Your Rights Under CCPA</h2>
+
+        <p>If you are a California resident, you have the right to know what personal information we collect, request deletion of personal information, and not be discriminated against for exercising these rights. We do not sell your personal information.</p>
+
+        <h2>Data Security</h2>
+
+        <p>We implement industry-standard security measures:</p>
+        <ul>
+          <li>All communications with Google, OpenAI, and Supabase use TLS 1.2+ (HTTPS) encryption</li>
+          <li>API keys are stored server-side on Supabase — never bundled in the app</li>
+          <li>No user data is stored on our servers</li>
+          <li>Payment processing is handled entirely by Apple</li>
+        </ul>
+
+        <h2>International Data Transfers</h2>
+
+        <p>Google Gemini, OpenAI, and Supabase may process your data on servers located outside the EEA (primarily the United States). These transfers are covered by the EU Standard Contractual Clauses (SCCs) included in each provider's DPA, which ensure an adequate level of data protection.</p>
+
+        <h2>Children's Privacy</h2>
+
+        <p>TapVoice is not directed to children under 13 years of age (or 16 in some jurisdictions). We do not knowingly collect personal information from children.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+
+        <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the "Last Updated" date at the top of this policy. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
         <h2>Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or your privacy:</p>
-        <p><strong>Email:</strong> tapvoiceai@gmail.com</p>
-        <p><strong>Developer:</strong> Miika Kettunen</p>
-        <p><strong>Location:</strong> Finland</p>
-    </div>
 
-        <div class="footer-note">
-            <em>TapVoice is built with privacy and simplicity in mind. We believe technology should serve you, not track you.</em>
-        </div>
+        <p>If you have questions about this Privacy Policy or want to exercise your GDPR or CCPA rights, please contact us:</p>
+
+        <p><strong>Email</strong>: <a href="mailto:tapvoiceai@gmail.com">tapvoiceai@gmail.com</a></p>
+
+        <h2>Data Processing Addendum (DPA)</h2>
+
+        <p>For enterprise customers or users requiring a formal DPA from us, please contact us at the email above. The sub-processors listed in the "Third-Party Services" section each provide their own DPA, linked inline.</p>
+
+        <h2>Summary</h2>
+
+        <ul>
+          <li>✅ All conversation history is stored locally on your device</li>
+          <li>✅ We do NOT operate servers that store your personal content</li>
+          <li>✅ We do NOT sell your data to third parties</li>
+          <li>✅ We do NOT track you with analytics or advertising SDKs</li>
+          <li>✅ Google Gemini and OpenAI do NOT use your API data to train their models</li>
+          <li>✅ You can delete all your data by uninstalling the app</li>
+          <li>✅ You have full GDPR and CCPA rights</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2026 Miika Kettunen · <a href="index.html">Home</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></p>
+      </footer>
     </div>
-</body>
-</html> 
+  </body>
+</html>
